@@ -23,22 +23,25 @@ class App extends Component {
     return (
       <div className="panel panel-primary">
         <div className="panel-heading">
+        <center>
           <h3>ToDo List</h3>
+          </center>
         </div>
         <div className="panel-body">
           <center>
             <h1>Add Your Task</h1>
           </center>
           <div className="form-group">
+            <center>
               <input
               className="form-control"
               placeholder="Enter your task"
               type="text"
               value={this.state.value}
               onChange={this.onChangeValue}
-            />
+            /></center>
           </div>
-       
+       <center>
         <button
         className="btn btn-success btn-block"
           type="button"
@@ -46,7 +49,7 @@ class App extends Component {
           disabled={!this.state.value}
         >
           Add
-        </button>
+        </button></center>
         <center>
           <h2>Tasks</h2>
           <ul>
